@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+body {
+  font-weight: 500;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blue {
+  color: #5e84db;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-lighter {
+  background-color: #f0f2f5;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.invert {
+  filter: invert(1);
 }
-
-.App-link {
-  color: #61dafb;
+.br-8 {
+  border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.br-15 {
+  border-radius: 15px !important;
+  -webkit-border-radius: 15px !important;
+  -moz-border-radius: 15px !important;
+  -ms-border-radius: 15px !important;
+  -o-border-radius: 15px !important;
+}
+.border-primary {
+  border-color: #262e80 !important;
+}
+.bg-blue {
+  background-color: #5e84db;
+}
+.d-blue {
+  color: #262e80;
+}
+.bg-d-blue {
+  background-color: #262e80;
+}
+.purple {
+  color: #9694ff;
+}
+.bg-purple {
+  background-color: #9694ff;
+}
+.pink {
+  color: #ef6092;
+}
+.bg-pink {
+  background-color: #ef6092;
+}
+.green {
+  color: #5ac35a;
+}
+.bg-green {
+  background-color: #5ac35a;
+}
+.d-green {
+  color: #228b22;
+}
+.bg-d-green {
+  background-color: #228b22;
+}
+.bg-trans {
+  background: transparent !important;
+}
+.lh-1 {
+  line-height: 1 !important;
+}
+.yellow {
+  color: yellow;
+}
+.ant-input-group-addon,
+.ant-input-affix-wrapper,
+button {
+  border: 0 !important;
+}
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  box-shadow: none !important;
+}
+.w-fit {
+  width: fit-content;
+}
+.ant-table-thead > tr > th {
+  color: #262e80 !important;
+  font-weight: bold !important;
+}
+.ant-table-tbody > tr > td {
+  font-weight: 500 !important;
+}
+.ant-table-tbody > tr > td:nth-child(2) {
+  color: #262e80 !important;
+}
+.ant-table-tbody > tr > td:nth-child(7) {
+  color: rgb(101, 173, 101) !important;
+}
+.ant-table-tbody > tr > td:nth-child(3),
+.ant-table-tbody > tr > td:nth-child(5),
+.ant-table-tbody > tr > td:nth-child(6),
+.ant-table-tbody > tr > td:nth-child(8),
+.ant-table-tbody > tr > td:nth-child(9),
+.ant-table-tbody > tr > td:nth-child(10) {
+  color: #262e80 !important;
+}
+.drop-down {
+  width: 23vw;
 }
