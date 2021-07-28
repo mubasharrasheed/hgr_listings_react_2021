@@ -61,7 +61,7 @@ for (let i = 0; i < 46; i++) {
     img: <img src={img} height={30} />,
     item: 1234546789,
     src: "Amazon",
-    title: "productabc",
+    title: "title the of product abc efd xyz",
     sell: 30.4,
     cost: 34.44,
     profile: 309,
