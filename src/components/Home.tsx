@@ -62,13 +62,13 @@ class Home extends React.Component {
               Listings
             </Menu.Item>
             <Menu.Item key="5" icon={<img src={settings} height={20} />}>
-              Settings <i class="fas fa-sort-down text-dark ml-2"></i>
+              Settings <i className="fas fa-sort-down text-dark ml-2"></i>
             </Menu.Item>
             <Menu.Item key="6" icon={<img src={services} height={20} />}>
-              Services <i class="fas fa-sort-down text-dark ml-2"></i>
+              Services <i className="fas fa-sort-down text-dark ml-2"></i>
             </Menu.Item>
             <Menu.Item key="7" icon={<img src={help} height={20} />}>
-              Help <i class="fas fa-sort-down text-dark ml-4 pl-1"></i>
+              Help <i className="fas fa-sort-down text-dark ml-4 pl-1"></i>
             </Menu.Item>
           </Menu>
         </Sider>

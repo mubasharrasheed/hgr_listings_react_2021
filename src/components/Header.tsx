@@ -15,8 +15,8 @@ import {
 } from "@ant-design/icons";
 import { Input } from "antd";
 import { AudioOutlined } from "@ant-design/icons";
-function Header(props) {
-  const onSearch = (value) => console.log(value);
+function Header(props: any) {
+  const onSearch = (value: any) => console.log(value);
   const { Search } = Input;
   const suffix = (
     <AudioOutlined
@@ -100,7 +100,7 @@ function Header(props) {
                   <span className="font-weight-bold">2</span> notifications{" "}
                 </div>
                 <div className="d-blue mr-3 lh-1">
-                  <i class="fas fa-circle yellow"></i>
+                  <i className="fas fa-circle yellow"></i>
                   <span className="font-weight-bold"> 12</span> Tokens{" "}
                 </div>
                 <div className="d-blue mr-3 lh-1 font-weight-bold">

@@ -54,7 +54,7 @@ const columns = [
   },
 ];
 
-const data = [];
+const data: any = [];
 for (let i = 0; i < 46; i++) {
   data.push({
     key: i,
@@ -73,7 +73,7 @@ for (let i = 0; i < 46; i++) {
     ),
     created: (
       <div className="d-flex align-items-center">
-        <div class="d-blue">13/07/2021 12:56</div>
+        <div className="d-blue">13/07/2021 12:56</div>
         <div className="lh-1">
           {" "}
           <button className="fas fa-edit btn border-0 bg-trans mr-2 ml-3 p-0"></button>
@@ -93,7 +93,7 @@ class Listing extends React.Component {
     selectedRowKeys: [], // Check here to configure the default column
   };
 
-  onSelectChange = (selectedRowKeys) => {
+  onSelectChange = (selectedRowKeys: any) => {
     console.log("selectedRowKeys changed: ", selectedRowKeys);
     this.setState({ selectedRowKeys });
   };
@@ -110,28 +110,32 @@ class Listing extends React.Component {
         {
           key: "odd",
           text: "Select Odd Row",
-          onSelect: (changableRowKeys) => {
+          onSelect: (changableRowKeys: any) => {
             let newSelectedRowKeys = [];
-            newSelectedRowKeys = changableRowKeys.filter((key, index) => {
-              if (index % 2 !== 0) {
-                return false;
+            newSelectedRowKeys = changableRowKeys.filter(
+              (key: any, index: any) => {
+                if (index % 2 !== 0) {
+                  return false;
+                }
+                return true;
               }
-              return true;
-            });
+            );
             this.setState({ selectedRowKeys: newSelectedRowKeys });
           },
         },
         {
           key: "even",
           text: "Select Even Row",
-          onSelect: (changableRowKeys) => {
+          onSelect: (changableRowKeys: any) => {
             let newSelectedRowKeys = [];
-            newSelectedRowKeys = changableRowKeys.filter((key, index) => {
-              if (index % 2 !== 0) {
-                return true;
+            newSelectedRowKeys = changableRowKeys.filter(
+              (key: any, index: any) => {
+                if (index % 2 !== 0) {
+                  return true;
+                }
+                return false;
               }
-              return false;
-            });
+            );
             this.setState({ selectedRowKeys: newSelectedRowKeys });
           },
         },
